@@ -1,8 +1,19 @@
-.App {
-  text-align: center;
+.form-input,
+.form-input:focus-visible {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid gainsboro;
+  outline: none;
 }
 
-.button {
+.form-label {
+  text-align: left;
+  font-weight: 600;
+  padding-top: 0.33rem;
+  padding-bottom: 0.33rem;
+}
+
+.submit-btn {
   font-weight: 600;
   margin-top: 20px;
   width: 130px;
@@ -13,16 +24,21 @@
   cursor: pointer;
 }
 
-.button:hover {
+.submit-btn:hover {
   background-color: rgb(164, 67, 255);
   box-shadow: 0px 15px 20px rgba(71, 35, 104, 0.4);
   color: #fff;
-  transform: translateY(-7px);
+  transform: translateY(-6px);
 }
 
-.button:active {
+.submit-btn:active {
   background-color: rgb(118, 56, 177);
   box-shadow: 0px 15px 20px rgba(71, 35, 104, 0.4);
   color: #fff;
   transform: translateY(-5px);
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
 }
